@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back_Ground</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            color: aliceblue;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            float: left;        
+        }
+
+        .box1{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            padding: 20px;
+            border: 10px dashed white;
+            background-clip: padding-box;
+        }
+
+        .box2{
+            width: 1000px;
+            height: 100vh;
+            background-image: url(./img/chicken_art.jpg);
+            background-size: contain;
+            background-position: top 20px left ;
+            background-repeat: no-repeat;
+        }
+
+        .box3{
+            width: 1000px;
+            height: 100vh;
+            background: url(./img/duck_art.jpg) no-repeat center / contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box box1">box 1</div> -->
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+</body>
+</html>
