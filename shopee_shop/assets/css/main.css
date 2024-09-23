@@ -1,0 +1,99 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0,#fd6032,#f5402d) ;
+}
+
+.header__navbar {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar--list {
+    list-style: none;
+    padding-left: 0;
+    box-sizing: border-box;
+    margin-top: 12px;
+}
+
+.header__navbar--item{
+    margin: 0 9px;
+    position: relative;
+}
+
+.header__navbar--item,
+.header__navbar--item--link{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.header__navbar--item,
+.header__navbar--item--link
+.header__navbar--icon--link {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header__navbar--item--link--bold {
+    font-weight: 600;
+}
+
+.header__navbar--item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-right: 1px solid #FB9086 ;
+    height: 12px;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__navbar--item:hover,
+.header__navbar--item--link:hover,
+.header__navbar--icon--link:hover {
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+
+.header__navbar--icon--link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header__navbar--icon {
+    font-size: 1.5rem;
+    margin: 0 6px;
+}
+
+.header__navbar--title--no-pointer {
+    cursor: text;
+    color: var(--white-color);
+}
+
+/* Header QR code */
+
+.header__qr {
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.header__qr--apps{
+    display:flex;
+}
+
+.header__qr--img{
+    width: 100%;
+}
+
+.header__qr--download-img {
+
+}
