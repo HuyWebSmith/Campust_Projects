@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Work Sans;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar--logo {
+    margin-left: 95px;
+}
+.header__navbar--list {
+    display: flex;
+    list-style: none;
+    color: black;
+    justify-content: flex-end;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.header__navbar--item {
+    margin-left: 35px;
+}
+
+
+.header__navbar--item a {
+    text-decoration: none;
+    color: #14171F;
+    font-weight: 400;
+    font-size: 13.17px;
+    line-height: 15.45px;
+    
+}
+
+.header__navbar--item:last-child a {
+    color: #F9995D;
+    font-weight: 600;
+}
+
+.header__navbar--logo {
+    
+    font-size: 21.95px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 25.75px;
+    color: #4150c1;
+    margin-top: 14px;
+}
+.banner {
+    
+    position: relative;
+}
+.banner img{
+    width: 100%;
+    height: 620.7px;
+    top: 58.54px;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+.banner h1 {
+    width: 430.84px;
+    height: 140px;
+    font-size: 65.68px;
+    font-weight: 600;
+    line-height: 61.8px;
+    position: absolute;
+    top: 330.88px;
+    left: 130.95px;
+}
+
+.banner__feature_Project {
+    
+    height: 200px;
+    width: 350.4px;
+    background-color: #3559c7;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.banner__feature_Project h2 {
+    
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.banner__feature_Project--back
+{
+    width: 49.9%;
+    height: 15%;
+    background: #292e3d;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding-top: 5px;
+}
+
+.banner__feature_Project--next {
+    width: 49.8%;
+    height: 15%;
+    background: #292e3d;
+    text-align: center;
+    color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-top: 5px;
+}
+
+.banner__feature_Project--bottom-background {
+    width: 100%;
+    height: 15%;
+    background: white;
+    position: absolute;
+    bottom: 0;
+}
