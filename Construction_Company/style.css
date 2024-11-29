@@ -71,6 +71,7 @@ body {
     object-fit: cover;
 }
 
+
 .banner h1 {
     width: 430.84px;
     height: 140px;
@@ -356,7 +357,7 @@ body {
     box-shadow: 0px 2.93px 4.39px -1.46px #1118270D;
     box-shadow: 0px 8.78px 11.71px -2.93px #1118271A;
     position: absolute;
-    left: 20%;
+    left: 25%;
     top: 150px;
     z-index: 1;
 }
@@ -366,7 +367,7 @@ body {
     height: 113.93px;
     box-shadow: 0px 2.93px 4.39px -1.46px #1118270D;
     box-shadow: 0px 8.78px 11.71px -2.93px #1118271A;
-
+    
     position: absolute;
     left: 25%;
     bottom: 70px;
@@ -378,7 +379,7 @@ body {
     height: 113.93px;
     box-shadow: 0px 2.93px 4.39px -1.46px #1118270D;
     box-shadow: 0px 8.78px 11.71px -2.93px #1118271A;
-
+    
     position: absolute;
     left: 42%;
     top: 50px;
@@ -387,12 +388,12 @@ body {
 
 .stats__tag--awards {
     width: 204.89px;
-    height: 113.93px;
+    height: 123.93px;
     box-shadow: 0px 2.93px 4.39px -1.46px #1118270D;
     box-shadow: 0px 8.78px 11.71px -2.93px #1118271A;
     position: absolute;
     left: 42%;
-    top: 252px;
+    top: 242px;
     z-index: 2;
 }
 .stats__tag--rectangle {
@@ -430,6 +431,7 @@ body {
 .stats__tag img {
     width: 57.81px;
     height: 57.81px;
+    z-index: 3;
 }
 
 .stats__infor {
@@ -690,4 +692,203 @@ body {
 .projects__construction--next:hover {
     transform: scale(0.99);
     background: #2947A9;
+}
+
+/* contact */
+.contact {
+    width: 100%;
+    height: 550.45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #F6F8F7;
+}
+
+.contact h3 {
+    width: 316px;
+    height: 31px;
+    font-size: 26.34px;
+    font-weight: 700;
+    line-height: 30.9px;
+    margin-top: 30px;
+}
+
+.contact h4 {
+    width: 394.4px;
+    height: 34px;
+    font-size: 14.63px;
+    font-weight: 400;
+    line-height: 17.17px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact__infor {
+    display: flex;
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    width: 430px;
+    margin-top: 40px;
+}
+
+.contact__infor input {
+    width: 204.89px;
+    height: 29.63px;
+    border-radius: 2.93px;
+    border: 1px solid #edeff4;
+    padding-left: 7px;
+}
+
+.contact__message {
+    margin-top: 20px;
+}
+.contact__message input {
+    width: 433.19px;
+    height: 98.78px;
+    border-radius: 2.93px;
+    border: 1px solid #edeff4;
+    padding-left: 7px;
+    padding-bottom: 68px;
+}
+
+.contact__message p {
+    width: 154px;
+    height: 14px;
+    font-family: Work Sans;
+    font-size: 11.71px;
+    font-weight: 400;
+    line-height: 13.73px;
+    margin-top: 10px;
+}
+
+.contact__message button {
+    width: 198.3px;
+    height:38.42px;
+    background: #2947A9;
+    padding: 11.71px 14.63px 11.71px 14.63px;
+    color: white;
+    font-family: Work Sans;
+    font-size: 13.17px;
+    font-weight: 600;
+    line-height: 15.45px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 25%;
+    border-radius: 2px;
+    border: transparent;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.contact__message button:hover {
+    transform: scale(1.1);
+}
+
+/* address */
+.address {
+    display: flex;
+    width: 100%;
+    height: 275.86px;
+
+}
+
+.address--left {
+    width: 65%;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.address--left pre {
+    font-family: Work sans;
+    font-size: 14.63px;
+    font-weight: 500;
+    line-height: 17.17px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.address--left pre span {
+    color: #2947A9;
+    
+}
+
+.address--left span {
+    width: 119.05px;
+    height: 34.76px;
+}
+
+.address__logo {
+
+    color: #2947A9;
+    font-size: 30.95px;
+    font-style: italic;
+    font-weight: 700;
+    margin-left: 80px;
+}
+
+.address__logo i {
+    margin-right: 7px;
+}
+.address--right {
+    width: 35%;
+}
+
+.address--right p {
+    width: 95px;
+    height: 17px;
+    color: #2947A9;
+    font-size: 17.63px;
+    font-weight: 500;
+    margin-top: 60px;
+}
+
+.subs input {
+    width: 204.89px;
+    height: 29.63px;
+    padding: 7.32px 5.85px 7.32px 5.85px;
+
+}
+
+.subs button {
+    width: 99.52px;
+    height: 30px;
+    border-radius: 2.93px;
+    background: #f9995d;
+    color: white;
+    border: transparent;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.subs button:hover {
+    transform: scale(1.1);
+    background: red;
+}
+
+.social i {
+    width: 29.27px;
+    height: 29.27px;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 20px;
+    color: #292E3D;
+}
+
+.author {
+    width: 100%;
+    height: 51.22px;
+    background: #2947A9;
+
+}
+
+.author p {
+    color: white;
+    padding-top: 20px;
+    font-size: 11.71px;
+    font-weight: 400;
+    line-height: 13.73px;
+    margin-left: 80px;
 }
