@@ -115,7 +115,12 @@ body {
 }
 
 #btnBook:hover {
-    transform: scale(1.1);
+    background: #AD343E;
+    
+}
+
+#btnBook:hover a {
+    color: white;
 }
 
 /* Banner */
@@ -258,6 +263,18 @@ body {
 
 .provide__img {
     background-image: url(./img/taco.png);
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 466px;
+    background-position-x: left;
+    background-position-y: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 8px;
+}
+
+.provide__img--2 {
+    background-image: url(./img/chieckenFried.png);
     background-repeat: no-repeat;
     width: 550px;
     height: 466px;
@@ -448,6 +465,243 @@ body {
     border-radius: 50%;
     font-size: 15px;
 }
+/* .customer */
+.customer {
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer h1 {
+    font-family: var(--playfair-display-font);
+    font-size: 50px;
+}
+.customer__card {
+    display: flex;
+    gap: 30px;
+}
+
+.customer__container {
+    width: 416px;
+    height: 408px;
+    background: #F9F9F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+
+.customer__container h2{
+    font-size: 24px;
+    color: #AD343E;
+}
+
+.customer__container p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container__line {
+    width: 90%;
+    height: 2px;
+    background: #F0F1EC;
+}
+
+.customer__infor {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.customer__img {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.customer__img img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* .blog */
+.blog {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    padding: 90px;
+    background: #F7F7F5;
+    justify-content: center;
+}
+
+
+.blog__header {
+    display: flex;
+    justify-content: space-between;
+}
+.blog__header h1{
+
+    font-weight: 550;
+}
+
+.blog__header a {
+    font-size: 14px;
+    font-weight: 550;
+    text-decoration: none;
+    width: 155px;
+    height: 50px;
+    background: transparent;
+    text-align: center;
+    padding-top: 15px;
+    color: var(--letter-color);
+    border-radius: 30px;
+    border: 2px solid var(--letter-color);
+}
+
+.blog__header a:hover {
+    background: #AD343E;
+    color: white;
+}
+
+.blog__card {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.blog__card--left {
+    width: 600px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+.blog__card--left img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog__card--left p {
+    width: 100%;
+    height: 40px;
+    font-weight: 250;
+    padding: 10px;
+}
+
+
+.blog__card--midle {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+}
+
+.blog__card__container {
+    height: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.blog__card__container img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog__card__container p {
+    margin-top: 5px;
+    font-weight: 300;
+    padding: 3px;
+}
+.blog__card--right {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+}
+
+/* footer */
+.footer {
+    height: 740px;
+    background: #474747;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.footer .Copyright {
+    position: absolute;
+    color: white;
+    bottom: 30px;
+}
+
+.footer__col1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer__col1 p {
+    color: white;
+    width: 260px;
+    font-weight: 300;
+}
+
+.footer__col2 {
+    display: flex;
+    gap: 120px;
+    margin-left: 150px;
+}
+
+.footer__col2 p {
+    color: white;
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.footer__col3 {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__col3--img {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.footer__col3--img img {
+    width: 200px;
+    
+    object-fit: cover;
+    object-position: center;
+    border-radius: 7px;
+}
+
+.footer__col3 p {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
 @media (max-width: 768px) {
     .contact__right {
         display: none;
@@ -462,10 +716,117 @@ body {
     }
 
     .header {
+        
         justify-content: flex-start;
     }
     
     .provide__content {
         display: none;
     }
+
+}
+
+/* content */
+.content {
+    height: 800px;
+
+}
+
+#content__img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    
+}
+
+.content__card {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card__container {
+    display: flex;
+    width: 370px;
+    height: 90px;
+}
+
+.card__container img {
+    width: 40px;
+    height: 45px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.card__infor p{
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+/* information */
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 750px;
+    background: #F9F9F7;
+}
+
+.information img {
+    height: 550px;
+    border-radius: 10px;
+}
+.information__content {
+    width: 50%;
+    height: 450px;
+}
+
+.information__content h1{
+    width: 450px;
+    font-size: 50px;
+    font-family: var(--playfair-display-font);
+    font-weight: 400;
+}
+.information__content p {
+    font-size: 16px;
+    font-weight: 300;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.content__card--top {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.content__card--bottom {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.content__card__container {
+    width: 300px;
+    height: 130px;
+    background: white;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.content__card__container h2 {
+    font-size: 45px;
+    font-family: var(--playfair-display-font);
+    font-weight: 400;
+}
+
+.content__card__container h3 {
+    font-weight: 300;
 }
