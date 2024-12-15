@@ -22,25 +22,22 @@ body {
     mask-image: linear-gradient(
         to right,
         transparent,
-        #000 10% 90%,
+        #000 5% 95%,
         transparent
     );
 }
 
 .slider .list{
-    display: flex;
     width: 100%;
     position: relative;
-    
 }
 
 .slider .list .item {
     width: var(--width);
     height: var(--height);
-    display: flex;
     position: absolute;
     left: 100%;
-    animation: autoRun 8.5s linear infinite;
+    animation: autoRun 10s linear infinite;
     transition: filter 0.5s;
     cursor: pointer;
 }   
@@ -60,7 +57,7 @@ body {
 }
 .slider:hover .item {
     animation-play-state: paused!important;
-    filter: grayscale(1);
+    filter: grayscale(1.5);
 }
 .slider .item:hover {
     filter: grayscale(0);
